@@ -1,24 +1,81 @@
-# WatchDog
-## Inspiration💡💡
-The rise in sophisticated phone scams, especially targeting vulnerable groups like seniors, inspired us to create WatchDog. We saw an urgent need for a cybersecurity solution that leverages advanced technology to provide robust, real-time protection against these threats.
+# ScamDetector - Scam Call Detection
 
-## What it does💻💻
-WatchDog enhances cybersecurity by defending against phone scams, using cutting-edge AI and advanced speech recognition. It listens to calls, dynamically evaluates risks and likelihoods of scams, and alerts users of the probability that they are at risk of being scammed, safeguarding vulnerable individuals like seniors.
+## Overview
+ScamDetector is an innovative cybersecurity tool designed to detect and prevent phone scams. By leveraging advanced AI and speech recognition technologies, it listens to phone calls and assesses the likelihood of a scam in real time. ScamDetector provides users with actionable insights, helping protect individuals, especially seniors, from falling victim to fraud.
 
-## How we built it🛠️🛠️
-We built WatchDog using ReactJS, TailwindCSS, and FramerMotion for the frontend, with Flask for the backend. Our group implemented state-of-the-art AI algorithms and speech recognition technologies. Our approach involved using NLP-based context-based matching with common scam/fraud-related phrases, recognizing suspicious patterns and keywords. We integrated this with a user-friendly interface that provides real-time 'scam scores', ensuring a seamless user experience.
+## Features
+- **Real-time Scam Detection:** Uses AI and speech recognition to evaluate the probability of scam calls.
+- **AI-Powered Risk Scoring:** Assigns a "scam score" based on the likelihood of fraud, alerting users of potential risks.
+- **User-Friendly Interface:** A clean and intuitive design that makes it easy to interact with the scam detection system.
+- **Smart Algorithms:** Scans for common scam-related phrases and suspicious patterns to assess the call's legitimacy.
 
-## Challenges we ran into🚧🚧
-Ensuring the AI's accuracy across diverse scenarios was a significant cybersecurity challenge. Minimizing false positives while maintaining high sensitivity to scams required fine-tuning our robust algorithm. We also ran into some issues with Git/Version Control.
+## Tech Stack
+- **Frontend:** ReactJS, TailwindCSS, FramerMotion
+- **Backend:** Flask
+- **AI:** Natural Language Processing (NLP) for context-based scam detection
+- **Speech Recognition:** Advanced technologies for analyzing call content in real time
 
-## Accomplishments that we're proud of✨✨
-We are proud of achieving high accuracy in detecting scam calls and creating a secure, seamless user experience. WatchDog was a concept that we were skeptical about implementing at first, but the process was very rewarding, especially seeing all of the components of the project come together and seeing our vision come to life.
+## Getting Started
 
-## What we learned📖📖
-We learned how to implement NLP matching into our project and the importance of cybersecurity threats. We made sure to tailor WatchDog to be more effective and user-friendly
+Follow these steps to get a local copy of the project up and running:
 
-## What's next for WatchDog 🕒🕒
-Next, we plan to enhance WatchDog cybersecurity capabilities by incorporating multi-language support and expanding our database of scam patterns. We aim to integrate with more communication platforms to provide broader protection. We look to extend our reach and impact, ensuring more people benefit from our advanced cybersecurity solution.
+### Prerequisites
+- Node.js and npm (for frontend)
+- Python and pip (for backend)
+- Flask
 
-## Explore our website
-[WatchDog](https://watchdogcyber.live/)
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/scamdetector.git
+    cd scamdetector
+    ```
+
+2. Install frontend dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Install backend dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Running the Application
+
+1. **Start the backend server**:
+    ```bash
+    python app.py
+    ```
+
+2. **Start the frontend**:
+    ```bash
+    npm start
+    ```
+
+
+
+## How it Works
+ScamDetector uses sophisticated algorithms to scan live phone conversations. By recognizing certain patterns and keywords associated with scams (such as "urgent" or "prize"), the system calculates a risk score. If a call is flagged as potentially fraudulent, users are alerted, enabling them to take action before falling victim to a scam.
+
+## Roadmap
+- **Multi-language Support:** Expanding ScamDetector's ability to recognize scams in various languages.
+- **Expanded Scam Database:** Continuously updating our database with new scam patterns and tactics.
+- **Integration with More Platforms:** Expanding support to work with additional communication platforms beyond phone calls.
+
+## Contributing
+
+We welcome contributions to enhance ScamDetector! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
